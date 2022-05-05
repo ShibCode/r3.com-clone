@@ -1,0 +1,1076 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins, sans-serif;
+}
+li {
+  list-style: none;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 16px -5px gray;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  max-width: 1100px;
+  width: 90%;
+}
+.search-div {
+  background-color: rgba(83, 88, 95, 0.75);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  visibility: none;
+  height: 0px;
+  transition: all 0.2s ease-in-out;
+  overflow-y: hidden;
+}
+.search-div-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  gap: 2rem;
+}
+.cross-2 {
+  width: 20px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-div-toggle {
+  visibility: visible;
+  height: 100.95px;
+}
+.search-bar {
+  position: relative;
+}
+.search-button {
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+.search-input {
+  padding: 0.5rem 2rem;
+  border: 1px solid black;
+  width: 30rem;
+}
+.search-img-2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
+}
+.cross {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.l1 {
+  border: 1px solid white;
+  width: 1.25rem;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.l2 {
+  border: 1px solid white;
+  width: 1.25rem;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.logo {
+  width: 5rem;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+.nav-link {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 18px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.red-circle {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.nav-link:hover .red-circle {
+  opacity: 1;
+}
+.buttons {
+  display: flex;
+  gap: 3rem;
+}
+.fa-magnifying-glass {
+  color: #ec1d24;
+  font-size: 19px;
+  cursor: pointer;
+}
+.search-button {
+  border: none;
+  background-color: transparent;
+}
+.explore {
+  color: white;
+  background-color: #ec1d24;
+  border: 1.5px solid #ec1d24;
+  padding: 0.5rem 1.75rem;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 155px;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  position: relative;
+  z-index: 102;
+}
+.close {
+  color: white;
+  background-color: #ec1d24;
+  border: 1.5px solid #ec1d24;
+  padding: 0.5rem 1.75rem;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 155px;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  position: relative;
+  z-index: 102;
+}
+.explore:hover {
+  background-color: white;
+  color: red;
+}
+.explore:hover .l1,
+.explore:hover .l2 {
+  border: 1px solid red;
+}
+.fa-bars {
+  height: 18px;
+}
+main {
+  margin-top: 100.95px;
+}
+.span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-top {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)),
+    url("https://www.r3.com/wp-content/uploads/2022/04/Home_Bridge_image-scaled.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-top-content {
+  padding: 11rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+  max-width: 1100px;
+  width: 90%;
+}
+.main-top-heading {
+  color: white;
+  font-size: 3.5rem;
+  width: 40rem;
+
+  line-height: 68px;
+}
+.main-top-para {
+  color: white;
+  font-size: 19px;
+}
+.main-top-button {
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #ec1d24;
+  border: 1px solid #ec1d24;
+  border-radius: 32px;
+  font-size: 17px;
+  font-weight: 700;
+  transition: all 0.15s ease-in-out;
+}
+.main-top-button:hover {
+  background-color: white;
+  color: #ec1d24;
+}
+.contact-us {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.contact-button {
+  background-color: #ec1d24;
+  border: 1px solid #ec1d24;
+  padding: 0.75rem 2rem;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.contact-button:hover {
+  background-color: white;
+  color: red;
+}
+.fa-envelope {
+  font-size: 18px;
+}
+.main-1 {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background: url("https://www.r3.com/wp-content/uploads/2021/07/the-power-of-3-only-from-R3-scaled-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-1-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1100px;
+  width: 90%;
+  padding: 5rem 0 25rem;
+}
+.upper-main-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.lower-main-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main-1-heading-1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.main-1-para-1 {
+  font-size: 15px;
+  max-width: 60rem;
+  width: 90%;
+}
+.main-1-heading-2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.main-1-para-2 {
+  line-height: 20px;
+}
+.red-span {
+  color: #ec1d24;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+.red-span:hover {
+  border-bottom: 2px solid #ec1d24;
+}
+.features {
+  display: flex;
+}
+.feature {
+  list-style: none;
+  border-left: 1px solid #ec1d24;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 15px;
+  width: 18rem;
+}
+.main-2 {
+  position: relative;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  background: url("https://www.r3.com/wp-content/uploads/2021/07/gray-pattern-scaled-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 40rem;
+  gap: 2rem;
+  overflow-x: visible;
+  margin: 5rem 0rem 6rem;
+  max-width: 1100px;
+  width: 90%;
+}
+.article {
+  background-color: white;
+  box-shadow: 0px 2px 5px gray;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem;
+  gap: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.article:hover {
+  color: #ec1d24;
+  cursor: pointer;
+}
+.article1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.article2 {
+  padding: 3rem 2rem;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.article3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.article4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.article5 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.main-2-red-heading {
+  color: #ec1d24;
+  font-weight: 400;
+}
+.main-2-heading {
+  font-size: 19px;
+  width: 90%;
+}
+.article-arrow {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 2rem;
+  font-size: 36px;
+}
+.company-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 60rem !important;
+}
+.companies {
+  display: flex;
+  gap: 5rem;
+}
+.fa-chevron-right,
+.fa-chevron-left {
+  color: #ec1d24;
+}
+.splide__arrow {
+  background-color: transparent !important;
+  opacity: 1 !important;
+  font-size: 24px !important;
+}
+.splide__arrow--prev {
+  left: -2em !important;
+}
+.splide__arrow--next {
+  right: -2em !important;
+}
+.company-logo-anchor {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  overflow: hidden;
+}
+.company-logo {
+  max-height: 6rem;
+  max-width: 10rem;
+}
+.wellsfargo {
+  max-height: 11rem;
+}
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 2rem;
+  color: #ec1d24;
+  cursor: pointer;
+}
+.splide__slide {
+  display: flex;
+  justify-content: center;
+}
+.main-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+.main-3-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+.main-3-para {
+  text-align: center;
+  font-size: 15px;
+}
+.main-3-heading {
+  font-size: 26px;
+  text-align: center;
+}
+.main-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+.main-4-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem 0;
+  max-width: 43rem;
+  width: 80%;
+}
+.main-4-heading {
+  text-align: center;
+  font-size: 28px;
+}
+.main-4-para {
+  text-align: center;
+  font-size: 15px;
+}
+.main-5 {
+  display: flex;
+  position: relative;
+}
+.main-5-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  padding: 3.5rem 0 0;
+  height: 285px;
+  box-sizing: border-box;
+  width: 33.3333333333333%;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container-1 {
+  background: linear-gradient(
+      0deg,
+      rgba(29, 35, 67, 0.75),
+      rgba(29, 35, 67, 0.75)
+    ),
+    url("https://www.r3.com/wp-content/uploads/2021/07/build.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container-2 {
+  background: linear-gradient(
+      0deg,
+      rgba(29, 35, 67, 0.75),
+      rgba(29, 35, 67, 0.75)
+    ),
+    url("https://www.r3.com/wp-content/uploads/2021/07/participate.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container-3 {
+  background: linear-gradient(
+      0deg,
+      rgba(29, 35, 67, 0.75),
+      rgba(29, 35, 67, 0.75)
+    ),
+    url("https://www.r3.com/wp-content/uploads/2021/07/partner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.red-circle-3 {
+  background-color: #ec1d24;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.fa-arrow-down {
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  transform: rotate(-135deg);
+  top: 2.5rem;
+  right: 2.25rem;
+  transition: all 0.2s ease-in-out;
+}
+.main-5-container:hover {
+  background-color: rgba(29, 35, 67, 0.85);
+}
+.main-5-container:hover .red-circle-3 {
+  opacity: 1;
+}
+.main-5-container:hover .fa-arrow-down {
+  color: #ec1d24;
+}
+.main-5-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.main-5-para {
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 21rem;
+  width: 90%;
+}
+.main-5-bg {
+  position: absolute;
+  z-index: -1;
+  width: 60vw;
+  top: 0;
+  left: 0;
+}
+.main-6 {
+  color: white;
+  background-color: #53585f;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+.main-6-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1100px;
+  gap: 4px;
+}
+.main-6-flex {
+  display: flex;
+  gap: 3rem;
+}
+.main-6-para {
+  font-size: 15px;
+}
+.dark-red-span {
+  color: #ec1d24;
+  cursor: pointer;
+}
+.email-input {
+  width: 55rem;
+  padding: 0.3rem 2rem;
+  border: 1px solid black;
+}
+.email {
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 46px;
+}
+.fa-arrow-right-long {
+  position: absolute;
+  color: #ec1d24;
+  z-index: 1;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+footer {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 90%;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-left-mid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact-r3 {
+  width: 10rem;
+  border-radius: 24px;
+  padding: 4px 0;
+  border: none;
+  border: 1px solid #ec1d24;
+  background-color: #ec1d24;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  transition: all 0.2s ease-in-out;
+}
+.contact-r3:hover {
+  background-color: white;
+  color: #ec1d24;
+}
+.footer-list-item {
+  font-weight: 700;
+  cursor: pointer;
+}
+.footer-list-item:hover {
+  color: #ec1d24;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.footer-logo {
+  width: 7rem;
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  gap: 2.5rem;
+}
+.fa-instagram,
+.fa-facebook-square,
+.fa-twitter,
+.fa-linkedin,
+.fa-youtube {
+  color: black;
+  font-size: 24px;
+}
+.rights {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 200;
+  width: 15rem;
+  gap: 1rem;
+}
+.footer-left-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer-heading-1 {
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.footer-heading-1:hover {
+  color: #ec1d24;
+}
+.footer-right-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 1px solid #ec1d24;
+  padding-bottom: 3rem;
+}
+.resources-list-div {
+  display: flex;
+}
+.resources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-right-bottom {
+  display: flex;
+  padding: 2.5rem 0;
+}
+.resource-list-item {
+  color: #53585f;
+  width: 15rem;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.resource-list-item:hover {
+  color: #ec1d24;
+}
+.footer-right-bottom-list-1,
+.footer-right-bottom-list-2,
+.footer-right-bottom-list-3-nested {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-right-bottom-list-3-nested-item,
+.footer-right-bottom-list-item {
+  color: #53585f;
+  width: 15rem;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.footer-right-bottom-list-3-nested-item:hover,
+.footer-right-bottom-list-item:hover {
+  color: #ec1d24;
+}
+.list-item-heading {
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.list-item-heading:hover {
+  color: #ec1d24;
+}
+.footer-right-bottom-list-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.perm-red-circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ec1d24;
+  transform: translateY(3px);
+}
+
+@media screen and (max-width: 1140px) {
+  .nav-link {
+    display: none;
+  }
+  .buttons {
+    gap: 2rem;
+  }
+  nav {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .main-top-heading {
+    font-size: 2.25rem;
+    max-width: 42rem;
+    width: 90%;
+    line-height: 46px;
+  }
+  .perm-red-circle {
+    transform: translate(0, 0);
+  }
+  .main-top-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 15px;
+  }
+  .main-top {
+    background-size: cover;
+  }
+  .main-top-content {
+    width: 85%;
+    gap: 1rem;
+  }
+  .contact-button {
+    padding: 1rem 0.5rem 1rem 0.75rem;
+    border-radius: 16px 0 0 16px;
+  }
+  .contact-us {
+    right: 0;
+  }
+  .contact-text {
+    display: none;
+  }
+  .features {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .feature {
+    max-width: 40rem;
+    width: 70%;
+    padding-bottom: 1rem;
+  }
+  .main-1-para-1 {
+    max-width: 45rem;
+  }
+  .main-1-heading-1 {
+    font-size: 20px;
+  }
+  .main-1-heading-2 {
+    font-size: 16px;
+  }
+  .main-1-content {
+    width: 85%;
+  }
+  .articles {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 60rem;
+    width: 85%;
+  }
+  .article {
+    gap: 0.5rem;
+  }
+  .main-2-heading {
+    line-height: 24px;
+  }
+  .article1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .article2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .article3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .article4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .article5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .main-4-heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .main-5 {
+    flex-direction: column;
+  }
+  .main-5-container {
+    width: 100%;
+    height: 300px;
+  }
+  .main-6-flex {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .email {
+    width: 100%;
+  }
+  .email-input {
+    width: 100%;
+  }
+  .main-6-content {
+    width: 85%;
+  }
+  .footer-right {
+    display: none;
+  }
+  .footer-content {
+    justify-content: center;
+  }
+  .footer-left {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .footer-left-bottom {
+    width: 100%;
+    align-items: center;
+  }
+  .rights,
+  .footer-para-1,
+  .footer-para-2 {
+    width: 100%;
+  }
+  .socials {
+    gap: 0;
+    max-width: 25rem;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .company-logo {
+    max-height: 5rem;
+    max-width: 8rem;
+  }
+  .wellsfargo {
+    max-height: 8rem;
+  }
+  .main-3-heading {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .search-div-content {
+    justify-content: center;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  .search-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .cross {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main-top-heading {
+    width: 100%;
+  }
+  .articles {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 100rem;
+  }
+  .article {
+    grid-column: 1/2;
+  }
+  .article1 {
+    grid-row: 1/2;
+  }
+  .article2 {
+    grid-row: 2/3;
+  }
+  .article3 {
+    grid-row: 3/4;
+  }
+  .article4 {
+    grid-row: 4/5;
+  }
+  .article5 {
+    grid-row: 5/6;
+  }
+  .company-logo {
+    max-height: 2rem;
+    max-width: 4rem;
+  }
+  .wellsfargo {
+    max-height: 4rem;
+  }
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 16px;
+  }
+  .splide__arrow--next {
+    right: -1.5em !important;
+  }
+  .splide__arrow--prev {
+    left: -1.5em !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .logo {
+    width: 3rem;
+  }
+  .buttons {
+    gap: 1rem;
+  }
+  .explore {
+    padding: 0.25rem;
+    font-size: 15px;
+    width: 125px;
+  }
+  .explore-para {
+    font-size: 15px;
+  }
+  .fa-bars {
+    height: 15px;
+  }
+  main {
+    margin-top: 76.5667px;
+  }
+  .search-div-toggle {
+    height: 76.5667px;
+  }
+  .search-input {
+    padding: 0.25rem 1rem;
+  }
+  .fa-magnifying-glass {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main-6-heading {
+    font-size: 17px;
+  }
+  .email-input {
+    font-size: 12px;
+  }
+  .fa-arrow-right-long {
+    font-size: 16px;
+  }
+  .company-logo {
+    max-height: 1rem;
+    max-width: 2.5rem;
+  }
+  .wellsfargo {
+    max-height: 2.5rem;
+  }
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 12px;
+  }
+}
